@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Задание №1</title>
+</head>
+<body>
+    <a href="/index.html"><span>НА ГЛАВНУЮ</span></a>
+   
+        <h2>Содержание задания №1:</h2>
+        <p>
+            Написать код, который будет преобразовывать XML в JS-объект и выводить его в консоль. Заготовка и конечный результат представлены.
+            XML:
+            <pre>
+                &lt;list&gt;
+                    &lt;student&gt;
+                        &lt;name lang="en"&gt;
+                            &lt;first&gt;Ivan&lt;/first&gt;
+                            &lt;second&gt;Ivanov&lt;/second&gt;
+                        &lt;/name&gt;
+                        &lt;age&gt;35&lt;/age&gt;
+                        &lt;prof&gt;teacher&lt;/prof&gt;
+                    &lt;/student&gt;
+                    &lt;student&gt;
+                        &lt;name lang="ru"&gt;
+                            &lt;first&gt;Петр&lt;/first&gt;
+                            &lt;second&gt;Петров&lt;/second&gt;
+                        &lt;/name&gt;
+                        &lt;age&gt;58&lt;/age&gt;
+                        &lt;prof&gt;driver&lt;/prof&gt;
+                    &lt;/student&gt;
+                &lt;/list&gt;
+            
+
+           JS-объект:
+           
+           {
+             list: [
+               { name: 'Ivan Ivanov', age: 35, prof: 'teacher', lang: 'en' },
+               { name: 'Петр Петров', age: 58, prof: 'driver', lang: 'ru' },
+             ]
+           }
+        </pre></p>
+   <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Задание №5</title>
+</head>
+<body>
+    <a href="/index.html"><span>НА ГЛАВНУЮ</span></a>
+   
+        <h2>Содержание задания №5:</h2>
+        <p>
+            Написать код приложения, интерфейс которого состоит из поля ввода и кнопки «Получить список задач». <br>
+            При нажатии на кнопку нужно отправить запрос с помощью fetch на URL https://jsonplaceholder.typicode.com/users/3/todos. <br>
+            Число 3 представляет собой id пользователя, вместо него нужно подставить число, введенное в поле. <br>
+            Если пользователь с таким id существует, вернется список задач для этого пользователя, каждая задача представлена объектом вида:
+          </p>
+            <pre><code>
+                {
+                    "userId": 3,
+                    "id": 43,
+                    "title": "tempore ut sint quis recusandae",
+                    "completed": true
+                }
+            </code></pre>
+            <p>
+                Где title — описание задачи, а completed — флаг, отображающий, выполнена задача или нет. <br>
+                Вывести данный список на страницу, оформив соответствующим образом: в виде списка (ul или ol), <br>
+                выполненные задачи должны быть написаны зачеркнутым текстом. Если пользователь с введенным id не существует, вывести сообщение: <br>
+                «Пользователь с указанным id не найден».
+            </p>
+            <hr>
+            <div>
+                <label>Введите id пользователя:</label>
+                <input type="number" id="userIdInput">
+                <button id="getTasksButton">Получить список задач</button>
+              </div>
+              
+              <ul id="tasksList"></ul>
+              
+              <p id="errorMessage"></p>
+   <script src="script5.js"></script>
+</body>
+</html>
